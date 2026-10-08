@@ -1,0 +1,130 @@
+
+body {
+    background-color: #eeeeee;
+    font-family: Arial, sans-serif;
+}
+
+.cartel {
+    width: 600px;
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 15px;
+    background-color: white;
+    text-align: center;
+}
+
+h1 {
+    background-color: #b60000;
+    color: white;
+    font-size: clamp(32px, 9vw, 70px);
+    margin: 0;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 23px;
+    margin: 15px 0;
+}
+
+.clase {
+    color: darkgreen;
+    font-size: 95px;
+    font-weight: bold;
+}
+
+.simbolo {
+    background-color: #082969;
+    font-size: 60px;
+    width: 130px;
+    height: 110px;
+    margin: auto;
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efecto al pasar el mouse */
+.simbolo:hover {
+    background-color: #b60000;
+    transform: scale(1.1);
+}
+
+/* Botón de activación */
+#activar {
+    background-color: #082969;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#activar:hover {
+    background-color: #b60000;
+}
+
+#activar:disabled {
+    background-color: #006b2e;
+    cursor: default;
+}
+
+#estado {
+    font-size: 14px;
+    color: #444444;
+}
+
+.descripcion h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.descripcion p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.metodo {
+    color: #082969;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+ol {
+    text-align: left;
+    font-size: 19px;
+    font-weight: bold;
+    padding-left: 55px;
+}
+
+.figuras {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.figura {
+    background-color: #b60000;
+    height: 150px;
+    flex: 1;
+}
+
+.izquierda {
+    clip-path: polygon(0 0, 100% 0, 45% 100%, 0 100%);
+}
+
+.centro {
+    clip-path: polygon(40% 0, 100% 0, 60% 100%, 0 100%);
+}
+
+.derecha {
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
